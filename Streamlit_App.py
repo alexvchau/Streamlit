@@ -14,7 +14,6 @@ import streamlit as st
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
 
 df = pd.read_csv(("/Users/Alex/hello/project/schools.csv"), usecols = ["NAME","LAT", "LON", "CBSATYPE", "STATE", "CBSA"])
 df.dropna(subset = ["LAT"], inplace=True)
